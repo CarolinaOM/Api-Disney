@@ -11,3 +11,110 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Fondo de la página */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('https://www.example.com/fondo-bonito.jpg'); /* Cambia a la URL de tu imagen */
+  background-size: cover; /* Hace que la imagen cubra toda la página */
+  background-position: center; /* Centra la imagen */
+  background-attachment: fixed; /* Hace que la imagen esté fija cuando se hace scroll */
+}
+
+/* Otros estilos */
+/* Estilos para la pantalla de inicio */
+.inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.imagen-inicio {
+  width: 300px; /* Ajusta el tamaño de la imagen */
+  height: auto;
+  margin: 20px 0;
+}
+
+.boton-inicio {
+  background-color: #3498db;
+  color: black;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-inicio:hover {
+  background-color: #2980b9;
+  transform: scale(1.05); /* Efecto de zoom */
+}
+
+/* Fondo de la aplicación */
+.App {
+  text-align: center;
+  padding: 20px;
+  background-image: url('https://www.example.com/fondo-bonito.jpg'); /* Cambia a la URL de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  border-radius: 15px;
+  color: black;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Otros estilos para la App */
+h1 {
+  color: black;
+}
+
+.abecedario-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.letra-boton {
+  background-color: rgba(52, 152, 219, 0.8);
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.letra-boton:hover {
+  background-color: rgba(41, 128, 185, 0.8);
+  transform: scale(1.1);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-size: 20px;
+  color: black;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 18px;
+  color: black;
+}
