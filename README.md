@@ -3,4 +3,4 @@ En esta API puedes ver las letras del abecedario en forma de botones donde al da
 
 Si quieres probar la api ingresa [aqui](https://tourmaline-bubblegum-ebe82e.netlify.app/)
 
-![Animation](https://github.com/user-attachments/assets/f35372ac-5e0b-41ba-aac8-c2c77abf2ffa)
+![Animation 2](https://github.com/user-attachments/assets/e5bbf197-5570-4b47-8e59-23773a381676)
