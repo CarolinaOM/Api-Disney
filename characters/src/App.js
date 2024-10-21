@@ -1,41 +1,47 @@
 import React, { useState, useEffect } from 'react';
-import personajesData from './personajes.json'; // Importa el JSON de personajes
+import personajesData from './personajes.json'; // Asegúrate de que la ruta sea correcta
 import './App.css'; // Importa los estilos
-import imagenInicio from './img/Disney.png'; // Importa la imagen local
+import imagenInicio from './img/Disney.png'; // Asegúrate de que la ruta de la imagen sea correcta
 
 function App() {
-  const [showApp, setShowApp] = useState(false); // Estado para alternar entre la pantalla inicial y la app
+  const [showApp, setShowApp] = useState(false);
   const [personajes, setPersonajes] = useState([]);
-  const [filtroLetra, setFiltroLetra] = useState(''); // Estado para almacenar la letra seleccionada
+  const [filtroLetra, setFiltroLetra] = useState('');
 
-  // Cargar todos los personajes al inicio
   useEffect(() => {
-    setPersonajes(personajesData.characters);
+    const personajesConImagenes = personajesData.characters.map((personaje) => {
+      try {
+        // Carga dinámica de la imagen usando require
+        const imagen = require(`${personaje.image}`);
+        return { ...personaje, image: imagen };
+      } catch (error) {
+        console.error(`Error cargando la imagen para ${personaje.name}:`, error);
+        return personaje; // Devuelve el personaje sin cambiar la imagen si hay un error
+      }
+    });
+
+    setPersonajes(personajesConImagenes);
   }, []);
 
-  // Manejar la selección de una letra
   const handleLetraClick = (letra) => {
-    setFiltroLetra(letra); // Actualiza la letra filtrada
+    setFiltroLetra(letra);
   };
 
-  // Filtrar los personajes según la letra seleccionada
+  const handleVolverInicio = () => {
+    setShowApp(false); // Cambia el estado para volver a la página de inicio
+  };
+
   const personajesFiltrados = personajes.filter((personaje) =>
     personaje.name.startsWith(filtroLetra)
   );
 
-  // Generar los botones del abecedario
   const abecedario = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
-  // Mostrar la pantalla de inicio
   if (!showApp) {
     return (
       <div className="inicio">
         <h1>Welcome to the Disney Characters App</h1>
-        <img 
-          src={imagenInicio} 
-          alt="Imagen de Disney" 
-          className="imagen-inicio"
-        />
+        <img src={imagenInicio} alt="Imagen de Disney" className="imagen-inicio" />
         <button onClick={() => setShowApp(true)} className="boton-inicio">
           Enter the App
         </button>
@@ -43,12 +49,9 @@ function App() {
     );
   }
 
-  // Mostrar la aplicación si el usuario ha hecho clic en el botón
   return (
     <div className="App">
       <h1>List of Disney characters</h1>
-
-      {/* Botones de las letras del abecedario */}
       <div className="abecedario-container">
         {abecedario.map((letra) => (
           <button key={letra} onClick={() => handleLetraClick(letra)} className="letra-boton">
@@ -57,13 +60,18 @@ function App() {
         ))}
       </div>
 
-      {/* Mostrar los personajes filtrados solo si hay una letra seleccionada */}
       {filtroLetra && (
         <ul>
           {personajesFiltrados.length > 0 ? (
             personajesFiltrados.map((personaje, index) => (
-              <li key={index}>
-                <h2>{personaje.name}</h2> {/* Mostrar solo el nombre */}
+              <li key={index} className="personaje-item">
+                <h2>{personaje.name}</h2>
+                <p>{personaje.description}</p>
+                <img
+                  src={personaje.image}
+                  alt={personaje.name}
+                  className="personaje-imagen"
+                />
               </li>
             ))
           ) : (
@@ -71,6 +79,11 @@ function App() {
           )}
         </ul>
       )}
+
+      {/* Botón para volver a la página de inicio */}
+      <button onClick={handleVolverInicio} className="boton-volver-inicio">
+        Go to Home
+      </button>
     </div>
   );
 }

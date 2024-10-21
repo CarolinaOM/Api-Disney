@@ -1,121 +1,199 @@
 {
   "characters": [
     {
-      "name": "Mickey Mouse"
+      "name": "Mickey Mouse",
+      "description": "El ícono de Disney, un ratón alegre y optimista que siempre está dispuesto a ayudar a sus amigos.",
+      "image": "./img/mickey.png"
     },
     {
-      "name": "Minnie Mouse"
+      "name": "Minnie Mouse",
+      "description": "La compañera inseparable de Mickey, elegante y llena de dulzura.",
+       "image": "./img/minnie.png"
     },
     {
-      "name": "Donald Duck"
+      "name": "Donald Duck",
+      "description": "El temperamental pero entrañable pato con una gran personalidad.",
+      "image": "./img/donald.png"
     },
     {
-      "name": "Goofy"
+      "name": "Goofy",
+      "description": "Un perro torpe pero de buen corazón, siempre causando risas con sus ocurrencias.",
+      "image": "./img/goofy.png"
     },
     {
-      "name": "Pluto"
+      "name": "Pluto",
+      "description": "El fiel perro de Mickey, siempre leal y juguetón.",
+      "image": "./img/pluto.png"
     },
     {
-      "name": "Daisy Duck"
+      "name": "Daisy Duck",
+      "description": "La novia de Donald, refinada y con un fuerte carácter.",
+      "image": "./img/pluto.png"
     },
     {
-      "name": "Ariel"
+      "name": "Ariel",
+      "description": "La princesa sirena que sueña con vivir en la superficie.",
+      "image": "./img/ariel.png"
     },
     {
-      "name": "Simba"
+      "name": "Simba",
+      "description": "El futuro rey de la selva, valiente y decidido.",
+      "image": "./img/simba.png"
     },
     {
-      "name": "Elsa"
+      "name": "Elsa",
+      "description": "La reina de Arendelle con poderes para controlar el hielo y la nieve.",
+      "image": "./img/elsa.png"
     },
     {
-      "name": "Anna"
+      "name": "Anna",
+      "description": "La hermana de Elsa, valiente y optimista, siempre buscando lo mejor para su familia.",
+      "image": "./img/anna.png"
     },
     {
-      "name": "Buzz Lightyear"
+      "name": "Buzz Lightyear",
+      "description": "El heroico guardián espacial que siempre está listo para la acción.",
+      "image": "./img/buzz.png"
     },
     {
-      "name": "Woody"
+      "name": "Woody",
+      "description": "El vaquero líder del grupo de juguetes y el mejor amigo de Buzz.",
+      "image": "./img/woody.png"
     },
     {
-      "name": "Tiana"
+      "name": "Tiana",
+      "description": "La princesa trabajadora y ambiciosa que sueña con abrir su propio restaurante.",
+      "image": "./img/tiana.png"
     },
     {
-      "name": "Belle"
+      "name": "Belle",
+      "description": "Una joven inteligente y curiosa que se enamora de la Bestia.",
+      "image": "./img/belle.png"
     },
     {
-      "name": "Peter Pan"
+      "name": "Peter Pan",
+      "description": "El niño que nunca crece y vive aventuras en el País de Nunca Jamás.",
+      "image": "./img/peterpan.png"
     },
     {
-      "name": "Jasmine"
+      "name": "Jasmine",
+      "description": "La princesa de Agrabah que busca la libertad y la aventura.",
+      "image": "./img/jasmine.png"
     },
     {
-      "name": "Aladdin"
+      "name": "Aladdin",
+      "description": "Un joven aventurero que encuentra una lámpara mágica.",
+      "image": "./img/aladdin.png"
     },
     {
-      "name": "Pocahontas"
+      "name": "Pocahontas",
+      "description": "Una joven nativa americana que busca la armonía entre su pueblo y los colonizadores.",
+      "image": "./img/pocahontas.png"
     },
     {
-      "name": "Mulan"
+      "name": "Mulan",
+      "description": "Una guerrera valiente que se disfraza de hombre para salvar a su padre.",
+      "image": "./img/mulan.png"
     },
     {
-      "name": "Hércules"
+      "name": "Hércules",
+      "description": "El semidiós griego en busca de su lugar en el Olimpo.",
+      "image": "./img/hercules.png"
     },
     {
-      "name": "Tarzán"
+      "name": "Tarzán",
+      "description": "Un hombre criado por gorilas en la selva.",
+      "image": "./img/tarzan.png"
     },
     {
-      "name": "Rapunzel"
+      "name": "Rapunzel",
+      "description": "La princesa con el cabello mágico que ha vivido toda su vida en una torre.",
+      "image": "./img/rapunzel.png"
     },
     {
-      "name": "Flynn Rider"
+      "name": "Flynn Rider",
+      "description": "El carismático ladrón que se convierte en el aliado de Rapunzel.",
+      "image": "./img/flynnrider.png"
     },
     {
-      "name": "Moana"
+      "name": "Moana",
+      "description": "La aventurera que navega por el océano para salvar a su pueblo.",
+      "image": "./img/moana.png"
     },
     {
-      "name": "Maui"
+      "name": "Maui",
+      "description": "El semidiós que ayuda a Moana en su viaje.",
+      "image": "./img/maui.png"
     },
     {
-      "name": "Wreck-It Ralph"
+      "name": "Wreck-It Ralph",
+      "description": "El villano de un videojuego que quiere ser un héroe.",
+      "image": "./img/ralph.png"
     },
     {
-      "name": "Vanellope von Schweetz"
+      "name": "Vanellope von Schweetz",
+      "description": "Una corredora de karts con una personalidad chispeante.",
+      "image": "./img/vanellope.png"
     },
     {
-      "name": "Nemo"
+      "name": "Nemo",
+      "description": "Un pequeño pez payaso que se embarca en una gran aventura.",
+      "image": "./img/nemo.png"
     },
     {
-      "name": "Dory"
+      "name": "Dory",
+      "description": "El pez azul con problemas de memoria que siempre es optimista.",
+      "image": "./img/dory.png"
     },
     {
-      "name": "Lightning McQueen"
+      "name": "Lightning McQueen",
+      "description": "El veloz coche de carreras que aprende el valor de la amistad.",
+      "image": "./img/lightning.png"
     },
     {
-      "name": "Mater"
+      "name": "Mater",
+      "description": "El amigable y torpe camión de remolque que es el mejor amigo de Lightning.",
+      "image": "./img/mater.png"
     },
     {
-      "name": "Cinderella"
+      "name": "Cinderella",
+      "description": "La joven de buen corazón que encuentra su destino en un baile real.",
+      "image": "./img/cinderella.png"
     },
     {
-      "name": "Snow White"
+      "name": "Snow White",
+      "description": "La princesa que es la más justa de todas, conocida por su bondad.",
+      "image": "./img/snowwhite.png"
     },
     {
-      "name": "Sleeping Beauty"
+      "name": "Sleeping Beauty",
+      "description": "La princesa Aurora, que cae en un sueño profundo por una maldición.",
+      "image": "./img/sleepingbeauty.png"
     },
     {
-      "name": "Prince Eric"
+      "name": "Prince Eric",
+      "description": "El valiente príncipe que se enamora de Ariel.",
+      "image": "./img/princeeric.png"
     },
     {
-      "name": "The Beast"
+      "name": "The Beast",
+      "description": "Un príncipe maldito que debe aprender a amar para romper el hechizo.",
+      "image": "./img/beast.png"
     },
     {
-      "name": "Stitch"
+      "name": "Stitch",
+      "description": "Una criatura extraterrestre traviesa con un gran corazón.",
+      "image": "./img/stitch.png"
     },
     {
-      "name": "Lilo"
+      "name": "Lilo",
+      "description": "Una niña hawaiana que adopta a Stitch como su mascota.",
+      "image": "./img/lilo.png"
     },
     {
-      "name": "Tinker Bell"
+      "name": "Tinker Bell",
+      "description": "El hada traviesa y leal amiga de Peter Pan.",
+      "image": "./img/tinkerbell.png"
     }
   ]
 }
